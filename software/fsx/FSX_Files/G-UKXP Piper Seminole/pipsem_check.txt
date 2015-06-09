@@ -1,0 +1,248 @@
+PIPER SEMINOLE PROCEDURES
+
+For detailed instructions on how to fly this aircraft, see the Aircraft Handbook. For suggested speeds, see the Reference tab.
+
+____________________________________
+BEFORE STARTING
+
+[ ] Parking Brake -- SET
+     (press CTRL+PERIOD key)
+[ ] All Avionics -- OFF
+[ ] Landing Gear Handle -- DOWN
+     (press G to toggle)
+[ ] Cowl Flaps -- CHECK OPEN
+[ ] Fuel Selectors -- CHECK ON
+     (press SHIFT+4 to display throttle quadrant)
+[ ] All Switches and Equipment Controls -- CHECK
+[ ] Battery and Alternator Switches -- ON
+[ ] Fuel Quantity Indicators -- CHECK QUANTITY
+[ ] Landing Gear Position Lights -- CHECK
+
+____________________________________
+STARTING
+
+Press SHIFT+4 to display throttle quadrant
+Press CTRL+E to initiate engine autostart sequence, or:
+
+LEFT ENGINE:
+(press E, then 1 to move focus to left engine)
+[ ] Mixture Control -- FULL RICH
+     (press CTRL+SHIFT+F3 until fully forward)
+[ ] Propeller Control -- HIGH RPM
+     (press CTRL+F3 until fully forward)
+[ ] Throttle -- FULL OPEN
+     (press F3 until fully forward)
+[ ] Fuel Boost Pump Switch -- HI (until fuel flow peaks,
+     then OFF)
+[ ] Throttle -- CLOSE; THEN OPEN APPROX. 1/2 INCH
+     (press F3 until fully in, then press F2 as necessary)
+[ ] Magneto/Start Switch -- START position; release to BOTH
+     position when engine starts
+     (press M+PLUS key to R, L, Both, Start)
+[ ] Throttle -- 900 to 1000 RPM after start
+[ ] Oil Pressure -- 10 PSI WITHIN 30 SECONDS
+[ ] Warm-up -- 900 to 1000 RPM
+[ ] Alternator Switch -- ON
+[ ] Loadmeters and Voltmeter -- CHECK FOR BATTERY CHARGE
+[ ] Red "START" Annunciator Light -- CHECK
+     (should be illuminated during start and extinguished
+      after start)
+
+RIGHT ENGINE:
+(press E, then 2 to move focus to left engine)
+[ ] Mixture Control -- FULL RICH
+     (press CTRL+SHIFT+F3 until fully forward)
+[ ] Propeller Control -- HIGH RPM
+     (press CTRL+F3 until fully forward)
+[ ] Throttle -- FULL OPEN
+     (press F3 until fully forward)
+[ ] Fuel Boost Pump Switch -- HI (until fuel flow peaks,
+     then OFF)
+[ ] Throttle -- CLOSE; THEN OPEN APPROX. 1/2 INCH
+     (press F3 until fully in, then press F2 as necessary)
+[ ] Magneto/Start Switch -- START position; release to BOTH
+     position when engine starts
+     (press M+PLUS key to R, L, Both, Start)
+[ ] Throttle -- 900 to 1000 RPM after start
+[ ] Oil Pressure -- 10 PSI WITHIN 30 SECONDS
+[ ] Warm-up -- 900 to 1000 RPM
+[ ] Alternator Switch -- ON
+[ ] Loadmeters and Voltmeter -- CHECK FOR BATTERY CHARGE
+[ ] Red "START" Annunciator Light -- CHECK
+     (should be illuminated during start and extinguished
+      after start)
+
+(press E, then 1, then 2 to move focus to both engines)
+
+____________________________________
+AFTER STARTING AND TAXI
+
+[ ] Avionics -- ON, AS REQUIRED
+    (press SHIFT+2 to display radio stack)
+[ ] Exterior Lights -- AS REQUIRED
+[ ] Brakes -- RELEASE AND CHECK
+     (press PERIOD key)
+
+____________________________________
+BEFORE TAKEOFF
+
+[ ] Parking Brake -- SET
+     (presss CTRL+PERIOD key)
+[ ] Fuel Boost Pumps -- OFF
+     (if ambient temperature is 32 degrees C or above,
+      use LOW pressure boost)
+[ ] All Instruments -- CHECKED
+[ ] Fuel Indicators -- CHECK QUANTITY INDICATED
+[ ] Mixture -- ADJUST AS REQUIRED BY FIELD ELEVATION
+     WHEN SETTING FULL POWER FOR TAKEOFF
+[ ] Fuel Selectors -- CHECK ON
+[ ] Red "START" Annunciator Light -- CHECK
+     (should be illuminated during start and extinguished
+      after start)
+[ ] Throttles -- 2200 RPM
+     (press F2 and F3 as necessary)
+[ ] Propellers -- EXERCISE
+     (to obtain 200-300 RPM drop, then return to high RPM)
+     (press CTRL+F2 and CTRL+F3 as necessary)
+[ ] Throttles -- 1700 RPM
+     (press F2 and F3 as necessary)
+[ ] Magnetos -- CHECK
+     <150 RPM drop on each; <50 RPM drop between
+     (click each to L, R, L, Both)
+[ ] Throttles -- 1500 RPM
+     (press F2 and F3 as necessary)
+[ ] Propellers -- FEATHERING CHECK
+     (Do not allow an RPM drop of more than 300 RPM)
+[ ] Throttles -- IDLE (note RPM)
+     (press F2 as necessary)
+[ ] Throttles -- 900 to 1000 RPM
+     (press F2 and F3 as necessary)
+[ ] Trim -- AS REQUIRED FOR TAKEOFF
+     (with Num Lock off, press Num Pad 1 and Num Pad 7
+      as necessary)
+[ ] Flaps - CHECK AND SET FOR TAKEOFF
+     (press F6 and F7 as necessary)
+[ ] Flight Controls -- CHECK PROPER DIRECTION AND
+     FREEDOM OF MOVEMENT
+[ ] Ice Protection Systems -- AS REQUIRED
+[ ] Parking Brake -- OFF
+     (press PERIOD key)
+
+____________________________________
+TAKEOFF
+
+[ ] Minimum Takeoff Oil Temperature -- 24 degrees C
+[ ] Throttles -- FULL
+     (press F3 until fully forward)
+[ ] Propellers -- MAX RPM
+     (press CTRL+F3 until fully forward)
+[ ] Mixture -- FULL RICH
+     (press CTRL+SHIFT+F3 until fully forward)
+[ ] Airspeed -- ACCELERATE TO AND MAINTAIN
+     RECOMMENDED SPEEDS (see Reference tab)
+[ ] Landing Gear -- RETRACT
+     (when positive rate of climb is established)
+     (press G)
+[ ] Airspeed -- ESTABLISH DESIRED CLIMB SPEED
+     (when clear of obstacles)
+
+____________________________________
+CLIMB
+
+[ ] Throttles -- FULL
+     (press F3 until fully forward)
+[ ] Propellers -- 2700 RPM
+     (press CTRL+F3 and CTRL+F2 as necessary)
+[ ] Mixture -- LEAN AS REQUIRED
+     (press CTRL+SHIFT+F2 and CTRL+SHIFT+F3
+      as necessary)
+[ ] Cowl Flaps -- OPEN
+[ ] Airspeed -- 105 KIAS
+
+____________________________________
+CRUISE CLIMB
+
+[ ] Throttles -- FULL
+     (press F3 until fully forward)
+[ ] Propellers -- 2500 RPM
+     (press CTRL+F3 and CTRL+F2 as necessary)
+[ ] Mixture -- LEAN AS REQUIRED
+     (press CTRL+SHIFT+F2 and CTRL+SHIFT+F3
+      as necessary)
+[ ] Cowl Flaps -- AS REQUIRED
+[ ] Airspeed -- 136 KIAS
+[ ] Engine Temperatures -- MONITOR
+[ ] Fuel Boost Pumps -- AS REQUIRED
+
+____________________________________
+CRUISE
+
+[ ] Cowl Flaps -- CLOSED
+[ ] Power --SET
+     (press F2 and F3 as necessary)
+[ ] Fuel Boost Pumps -- AS REQUIRED
+[ ] Mixtures -- SET USING EGT
+
+____________________________________
+DESCENT
+
+[ ] Altimeter -- SET
+     (press B to autoset to current setting)
+[ ] Mixture -- ENRICH AS REQUIRED
+     (press CTRL+SHIFT+F3 and CTRL+SHIFT+F2
+      as necessary)
+[ ] Cowl Flaps -- CLOSED
+[ ] Flaps -- AS REQUIRED
+     (press F6 and F7 as necessary)
+[ ] Power -- AS REQUIRED (avoid prolonged idle settings)
+     (press F2 and F3 as necessary)     
+
+____________________________________
+BEFORE LANDING
+
+[ ] Fuel Selector Valves -- CHECK ON
+[ ] Fuel Boost Pumps -- OFF OR LOW AS PER
+     AMBIENT TEMPERATURE
+[ ] Cowl Flaps -- AS REQUIRED
+[ ] Mixture Controls -- AS REQUIRED BY FIELD ELEVATION
+[ ] Flaps -- APPROACH (15 degrees; when below 152 KIAS)
+     (press F6 and F7 as necessary)
+[ ] Landing Gear -- DOWN (below 152 KIAS)
+[ ] Flaps -- FULL (30 degrees; when below 122 KIAS)
+[ ] Airspeed -- ESTABLISH NORMAL APPROACH SPEED
+     (approx. 95 KIAS)
+[ ] Propellers -- HIGH RPM
+     (press CTRL+F3 until fully forward)
+
+____________________________________
+AFTER LANDING (CLEAR OF RUNWAY)
+
+[ ] Landing and Taxi Lights -- AS REQUIRED
+[ ] Flaps -- UP
+     (press F6 as necessary)
+[ ] Trim Tabs -- SET TO ZERO
+     (with Num Lock off, press Num Pad 1 and Num Pad 7
+      as necessary)
+[ ] Cowl Flaps -- OPEN
+[ ] Fuel Boost Pumps -- AS REQUIRED
+
+____________________________________
+SHUTDOWN
+
+[ ] Parking Brake -- SET
+     (press CTRL+PERIOD key)
+[ ] Propellers -- HIGH RPM
+     (press CTRL+F3 until fully forward)
+[ ] Throttles -- 1000 RPM
+     (press F2 and F3 as necessary)
+[ ] Fuel Boost Pumps -- OFF
+[ ] Electrical and Avionics Equipment -- OFF
+[ ] Mixture Controls -- IDLE CUT-OFF
+     (press CTRL+SHIFT+F2 until fully back)
+[ ] Magneto/Start Switches -- OFF AFTER ENGINES STOP
+     (press M+MINUS key to L, R, OFF)
+[ ] Battery and Alternator Switches -- OFF AFTER ENGINES STOP
+
+
+
+NOTE: This aircraft's real-world checklists have been modified for use with Flight Simulator 2002. To learn about using, printing, and customizing checklists, see Help.

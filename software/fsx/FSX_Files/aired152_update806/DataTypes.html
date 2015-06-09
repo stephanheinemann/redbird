@@ -1,0 +1,152 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="William Roth">
+   <meta name="GENERATOR" content="Mozilla/4.75 [en] (Windows NT 5.0; U) [Netscape]">
+   <title>DataTypes</title>
+</head>
+<body>
+
+<center>
+<h1>
+<font color="#FF0000">Data Types</font></h1></center>
+<font color="#000000">There are currently eight data types defined for
+AirEd. Further types are defined using conversions. Note that the ranges
+given are for the raw data type only, as stored in the AIR file. Indidvidual
+entries may have further limitations on the numbers. For example, the dry
+weight of an aircraft would not be a negative number, even though you could
+put one in.</font>
+<h3>
+<font color="#000000">Raw Data Types:</font></h3>
+These are the types as stored in the AIR file. None of these types use
+conversions. They are presented as they come in the air file.
+<p><img SRC="Unknown.jpg" height=18 width=32> This means that the type
+of data is unknown. This can appear for entire records when nothing about
+the record is known, or for isolated areas of records where there are knowlege
+gaps.
+<br>The editor used is a Hex editor, since the type of the data items is
+unknown.
+<p><img SRC="rec.jpg" height=18 width=32> This denotes a record for which
+has multiple data members and at least some of the members are known. Clicking
+on this will expand the tree to show the data members in the record.
+<p><img SRC="BOOL.jpg" height=18 width=33> This means a Boolean one or
+zero. I have found that BOOL types in AIR files are all 4 bytes, just as
+the ones in M$ C compilers. All of those extra bits are unused. Just click
+on the entry to toggle it between true and false.
+<p><img SRC="int8.jpg" height=18 width=32> An 8-bit signed integer. This
+is the same as a C language "char". It can range from -128 to 128. There
+are no decimal capabilities to integer types.
+<p><img SRC="int16.jpg" height=18 width=32> A 16-bit signed integer. Ranges
+from -32768 up to 32768.
+<p><img SRC="int32.jpg" height=18 width=32> A 32-bit signed integer. Ranges
+from&nbsp; -2147483648 all the way up to 2147483647.
+<p><img SRC="double.jpg" height=18 width=33> A 64-bit signed value that
+can contain a decimal place. This is the only raw data member yet found
+in an AIR file that has a decimal place.
+<p><img SRC="text.jpg" height=18 width=32> The record contains text only.
+Note that the text entered here has no effect on the flight or visual models.
+It is for information only.
+<br>&nbsp;
+<h3>
+Converted Data Types:</h3>
+FS's origins go back to when our computers' processors didn't have floating
+point coprocessors. Floating point decimal numbers were possible, but they
+took a LOT of processor time and therefore slowed programs down dramatically.
+The original FS authors avoided the slowdowns by using integer (whole number)
+representations of the data, and these remain in the sim (and the AIR files)
+to this day for many of the entries. Each new version of the AIR file,
+however, contains more and more floating point numbers.
+<p>The following types use conversions to the data so that they can be
+displayed in real world numbers. Conversions are used in AirEd only when
+they are proven to be accurate. Decimal rounding to integers are treated
+properly. The values to the right of the decimal place are not just dropped.
+<p><img SRC="prpm.jpg" height=18 width=32> Piston Engine Governed RPM.
+The raw data is stored as 1/4 RPM per unit, and the amount is the number
+over 1400. In other words, a zero in the raw data will give 1400 in the
+sim, while 2400 raw data works out to 2000 actual RPM (1400 plus 1/4 of
+2400). A rather strange way of doing things! Once converted, the number
+presented in AirEd is the actual RPM, and valid numbers are from 1400 to
+9591.
+<p><img SRC="ang16.jpg" height=18 width=32> A 16 bit integer representation
+of an angle. The raw data is an int16, with 182 units=1 degree. The data
+is presented as degrees from -180.0 to 180.0.
+<p><img SRC="mach.jpg" height=18 width=32> Internally, the sim represents
+this data as a 16 bit unsigned (positive only) integer. In the AIR file,
+an int32 is used, with only the low 16 bits valid. The data is presented
+by AirEd as the real world mach number, which is found by dividing the
+raw data by 20,480. Since the raw data has a maximum of 65,535, the converted
+number has a maximum of 3.1999. Used in Mmo.
+<p><img SRC="aspd.jpg" height=18 width=32> This is a simple conversion.
+128 raw data units per knot of airspeed. Used in Vmo.
+<p><img SRC="M256.jpg" height=18 width=32> This type is stored in the AIR
+files as 256ths of a meter. For consistancy I convert the data so that
+it is shown in inches.
+<p><img SRC="16pct.jpg" height=18 width=32> Another simple conversion.
+16383=100%.
+<p><img SRC="thrust.jpg" height=18 width=32> This one is somewhat an educated
+guess. It was found by converting FSFS aircraft with easy values(100 and
+10,000), and also by looking at many other planes with known good engine
+performance. The conversion factor used is 13.671. Others have tried to
+round this to the nearest houndred lbs thrust. I didn't, the data presented
+is direct from the conversion.
+<br>&nbsp;
+<h3>
+Tables:</h3>
+An air file contains numerous tables. I have found out the purpose of just
+a few of these. To make them most understandable for editing, I present
+them in their own window as a graph. So far I have found two types of tables.
+<p><img SRC="tbl16.jpg" height=18 width=32> This presents a graph of all
+the data in the record. The data is treated as a series of int16 table
+entries.
+<br>Each entry has a vertical grey line. The entry being edited is highlighted
+by a blue line. The entry values are connected by straight red lines.
+<br>Editing is accomplished via the numpad and arrow keys. Be sure that
+your Num Lock is on!
+<ul>
+<li>
+Left and Right arrow keys move the highlight left and right.</li>
+
+<li>
+Numpad 4 and 6 also move the highlight left and right.</li>
+
+<li>
+Up and Down arrow keys increment and decrement the data by one.</li>
+
+<li>
+Numpad 7 and 1 increment and decrement the data by 10.</li>
+
+<li>
+Numpad 8 and 2 increment and decrement the data by 100.</li>
+
+<li>
+Numpad 9 and 3 increment and decrement the data by 1000.</li>
+</ul>
+The bar at the bottom shows the actual value of the entry being edited
+on the left, and the Num Lock status on the right.
+<br>The Enter key saves the changes and closes the window.
+<br>The Escape key closes the window without saving.
+<p><img SRC="tbldb.jpg" height=18 width=32> This presents a two dimensional
+graph of the data. This is a special type of table that contains pairs
+of data. Each pair contains an X extent and a Y extent. These are graphed
+in the window and shown as text at the bottom. Editing is similar as the
+TBL16 type above. Additionally, the numbers can be edited directly. To
+edit the X extent(the only way), highlight the entry you want to edit and
+press the X key. Same for the Y value, with the Y key.
+<br><i>NOTE:</i> I have no idea what might result from editing the X values!
+It may cause FS not to load the aircraft, malfunction, or even crash FS.
+<p><img SRC="tbl3d.jpg" BORDER=0 height=18 width=32>This is a three dimensional
+data record, introduced in FS2k. Trying to represent this as a graph might
+prove visually confusing, so it is instead done similar to a spreadsheet
+table. This makes editing more familiar for most, and appears to be the
+way the data is stored in the record. Note that the numbers of x and y
+cells (with the same record identifier number) can vary by aircraft, so
+if you are putting one of these records into a file to make a true FS2k
+file, you may have to experiment to see which size one is correct for your
+aircraft.
+<br><i>NOTE:</i>It is now possible to edit the first row and column (shown
+in grey). These describe the data points. Like editing the X values in
+a tbldb, editing these might cause serious problems in the sim!
+<br>&nbsp;
+</body>
+</html>

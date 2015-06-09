@@ -1,0 +1,580 @@
+// Test copy 04
+// 01 -this test version has the elevator trim effectiveness set to 0.8 instead of 1.0
+// 02 - this test version has the C-FHDP set as atc_id and elevator trim effectiveness set to 0.7 instead of 0.8
+// 03 - this version has pitch trim stability
+// 04 - this version has increased pitch trim stability, increased aileron effectiveness and max cruise reduced from 169 160 TAS per POH
+//	and deice boots disabled
+[fltsim.0]
+title=PA44-XX-S004
+sim=PA44-XX-S004
+model=
+panel=
+sound=
+texture=
+kb_checklists=Piper PA-44 Seminole_check
+kb_reference=Piper PA-44 Seminole_ref
+atc_id=C-FHDP
+ui_manufacturer="Piper"
+ui_type="Seminole"
+ui_variation="Brown"
+ui_typerole="Twin Engine Prop"
+ui_createdby=Redbird Flight Simulations
+description="The Piper PA-44 Seminole is an American twin-engined light aircraft manufactured by Piper Aircraft.The PA-44 is a development of the Piper Cherokee single-engine aircraft and is primarily used for multi-engine flight training.The Seminole was built in 1979-82, in 1989-90, and again since 1995-to now"
+
+[General]
+atc_type=Piper
+atc_model=PA44
+editable=0
+performance="Cruise Speed\n160 kts              183 Mph\/hr\n\nEngine\nLycoming O360 210 hp\n\nPropeller\nTwo-bladed Hartzell constant-speed, variable pitch\n\nMaximum Range\n881 nm            1,630 km\n\nService Ceiling\n17,100 ft           5,213 km\n\nFuel Capacity\n110 gal               409 L\n\nMaximum Gross Weight\n3,816 lb             1,731 kg        \n\nLength\n27 ft, 7.2 in          8.41 m\n\nWingspan\n38 ft, 8 in           11.77 m\n\nHeight\n8 ft, 6 in              2.59 m\n\nSeating                 Up to 4\n\nUseful Load\n1,456 lb                732 kg"
+Category = airplane
+
+[CameraDefinition.001]
+Title = "Left Seat"
+Guid = {195EAB58-9E4A-1E2A-A34C-A8D9D948F078}
+Origin = Virtual Cockpit
+MomentumEffect = No				// =NO means no head bob on take off
+SnapPbhAdjust = Swivel
+SnapPbhReturn = False
+PanPbhAdjust = Swivel
+PanPbhReturn = False
+Track = None
+ShowAxis = YES
+AllowZoom = TRUE
+InitialZoom = 1.2
+SmoothZoomTime = 2.0
+ZoomPanScalar = 1.0
+ShowWeather = Yes
+XyzAdjust = TRUE
+ShowLensFlare=FALSE
+Category = Cockpit
+PitchPanRate=20
+HeadingPanRate=60
+//*InitialXyz=-.03, 0.0475, 0.16
+//*InitialPbh=0.5, 1.0, -17.0
+InitialXyz=0.0, 0.0, 0.0
+InitialPbh=0.0, 0.0, -4.0
+
+[CameraDefinition.002]
+Title = "Right Seat"
+Guid = {195EAB58-9E4A-2E2A-A34C-A8D9D948F078}
+Origin = Virtual Cockpit
+MomentumEffect = No				// =NO means no head bob on take off
+SnapPbhAdjust = Swivel
+SnapPbhReturn = False
+PanPbhAdjust = Swivel
+PanPbhReturn = False
+Track = None
+ShowAxis = YES
+AllowZoom = TRUE
+InitialZoom = 1.2
+SmoothZoomTime = 2.0
+ZoomPanScalar = 1.0
+ShowWeather = Yes
+XyzAdjust = TRUE
+ShowLensFlare=FALSE
+Category = Cockpit
+PitchPanRate=20
+HeadingPanRate=60
+//*InitialXyz=0.3, 0.0475, 0.16
+//*InitialPbh=0.5, 1.0, 17.0
+InitialXyz=0.0, 0.0, 0.0
+InitialPbh=0.0, 0.0, 26.0
+
+[CameraDefinition.003]
+Title = "Right 45"
+Guid = {195EAB58-9E4A-3E2A-A34C-A8D9D948F078}
+Origin = Virtual Cockpit
+MomentumEffect = No				// =No means no head bob on take off
+SnapPbhAdjust = Swivel
+SnapPbhReturn = False
+PanPbhAdjust = Swivel
+PanPbhReturn = False
+Track = None
+ShowAxis = YES
+AllowZoom = TRUE
+InitialZoom = 1.2
+SmoothZoomTime = 2.0
+ZoomPanScalar = 1.0
+ShowWeather = Yes
+XyzAdjust = TRUE
+ShowLensFlare=FALSE
+Category = Cockpit
+PitchPanRate=20
+HeadingPanRate=56
+InitialXyz=0.0, 0.0, 0.0
+InitialPbh=0.0, 0.0, 56.0
+
+[CameraDefinition.004]
+Title = "Right 90"
+Guid = {195EAB58-9E4A-4E2A-A34C-A8D9D948F078}
+Origin = Virtual Cockpit
+MomentumEffect = No				// =No means no head bob on take off
+SnapPbhAdjust = Swivel
+SnapPbhReturn = False
+PanPbhAdjust = Swivel
+PanPbhReturn = False
+Track = None
+ShowAxis = YES
+AllowZoom = TRUE
+InitialZoom = 1.2
+SmoothZoomTime = 2.0
+ZoomPanScalar = 1.0
+ShowWeather = Yes
+XyzAdjust = TRUE
+ShowLensFlare=FALSE
+Category = Cockpit
+PitchPanRate=20
+HeadingPanRate=60
+InitialXyz=0.0, 0.0, 0.0
+InitialPbh=7.57, 0.0, 86.0
+
+[CameraDefinition.005]
+Title = "Left 45"
+Guid = {195EAB58-9E4A-5E2A-A34C-A8D9D948F078}
+Origin = Virtual Cockpit
+MomentumEffect = No				// =No means no head bob on take off
+SnapPbhAdjust = Swivel
+SnapPbhReturn = False
+PanPbhAdjust = Swivel
+PanPbhReturn = False
+Track = None
+ShowAxis = YES
+AllowZoom = TRUE
+InitialZoom = 1.2
+SmoothZoomTime = 2.0
+ZoomPanScalar = 1.0
+ShowWeather = Yes
+XyzAdjust = TRUE
+ShowLensFlare=FALSE
+Category = Cockpit
+PitchPanRate=20
+HeadingPanRate=60
+InitialXyz=0.0, 0.0, 0.0
+InitialPbh=0.0, 0.0, -34.0
+
+[CameraDefinition.006]
+Title = "Left 90"
+Guid = {195EAB58-9E4A-6E2A-A34C-A8D9D948F078}
+Origin = Virtual Cockpit
+MomentumEffect = No				// =No means no head bob on take off
+SnapPbhAdjust = Swivel
+SnapPbhReturn = False
+PanPbhAdjust = Swivel
+PanPbhReturn = False
+Track = None
+ShowAxis = YES
+AllowZoom = TRUE
+InitialZoom = 1.2
+SmoothZoomTime = 2.0
+ZoomPanScalar = 1.0
+ShowWeather = Yes
+XyzAdjust = TRUE
+ShowLensFlare=FALSE
+Category = Cockpit
+PitchPanRate=20
+HeadingPanRate=60
+InitialXyz=0.0 0.0, 0.0
+InitialPbh=7.45, 0.0, -64.0			//7.45
+
+//[CameraDefinition.007]
+//Title = "Panel Only"
+//Guid = {0d00bbe7-2099-4d78-a4c1-5f683edb4cd4}
+//Description= Panel Only View
+//Origin = Cockpit
+//ShowPanel = Yes
+//SnapPbhAdjust = Ordinal
+//SnapPbhReturn = True
+//PanPbhAdjust= Ordinal
+//PanPbhReturn = True
+//Track = None
+//ShowAxis = FrontOnly
+//AllowZoom = True
+//InitialZoom = 1.0
+//SmoothZoomTimre = 2.0
+//ShowWeather = Yes
+//XYZAdjust = True
+//ShowLensFlare = False
+//Category = Cockpit
+//CycleHidden = Yes
+//PanelOnly = True
+
+[WEIGHT_AND_BALANCE]
+max_gross_weight = 3800                   // (pounds)
+empty_weight = 2615                         // (pounds)
+
+reference_datum_position= 4.0, 0.0, 0.0
+empty_weight_CG_position= -4.0, 0.0, 0.0
+
+max_number_of_stations= 5
+station_load.0=  170.0,  -4.350, -0.800, -0.045
+station_load.1=  170.0,  -4.350, 0.800, -0.045
+station_load.2=  0.0, -6.600, -0.800, -0.045          	 //Rear Passenger  Weight (lbs), longitudinal, lateral, vertical positions from datum (feet)
+station_load.3=  0.0, -6.600,  0.800, -0.045       	 //Rear Passenger  Weight (lbs), longitudinal, lateral, vertical positions from datum (feet)
+station_load.4=  0.0, -9.0,  0.0, 0.0          		 //Baggage         Weight (lbs), longitudinal, lateral, vertical positions from datum (feet)
+
+station_name.0 = "Pilot"     
+station_name.1 = "Co-Pilot"  
+station_name.2 = "Passenger" 
+station_name.3 = "Passenger" 
+station_name.4 = "Passenger" 
+
+;Moments of Inertia
+empty_weight_pitch_MOI  = 3905.65
+empty_weight_roll_MOI   = 2718.64
+empty_weight_yaw_MOI    = 5291.04
+empty_weight_coupled_MOI= 0.0
+
+[flight_tuning]
+cruise_lift_scalar     = 1.0
+parasite_drag_scalar   = 1.0
+induced_drag_scalar    = 1.05		      	// was 1.1
+elevator_effectiveness = 0.9			// was 1.1
+aileron_effectiveness  = 1.1			// was 1.0
+rudder_effectiveness   = 1.0
+pitch_stability        = 1.15			// was 1.0
+roll_stability         = 1.0
+yaw_stability          = 1.0
+elevator_trim_effectiveness = 0.7		//was 1.0 changed 5-6-2015 test 01 5-6-2015 changed to 0.7 for test 02
+aileron_trim_effectiveness  = 1.0
+rudder_trim_effectiveness   = 1.0
+
+[GeneralEngineData]
+engine_type = 0                                 //0=Piston, 1=Jet, 2=None, 3=Helo-Turbine, 4=Rocket, 5=Turboprop
+Engine.0 = 2, -11.3, 0.0                      //(feet) longitudinal, lateral, vertical distance from reference datum
+Engine.1 =2,  11.3, 0.0                      //(feet) longitudinal, lateral, vertical distance from reference datum
+fuel_flow_scalar= 0.70                      //0.9 //Fuel flow scalar
+min_throttle_limit=-0.250000		     //0.03
+
+[piston_engine]
+power_scalar = 0.96                            // was 1.0 Piston power scalar
+cylinder_displacement= 90.0                     //Cubic inches per cylinder
+compression_ratio= 8.5                          //Compression ratio
+number_of_cylinders= 4                          //Number of cylinders
+max_rated_rpm= 2700.0                           //Max rated RPM
+max_rated_hp= 180.0                             //Max rated HP
+fuel_metering_type= 1                          //0=Fuel Injected, 1=Gravity Carbureter, 2=Aerobatic Carbureter
+cooling_type= 0                                 //0=Cooling type Air, 1=Cooling type Liquid
+normalized_starter_torque= 1.0              //1.0   //Starter torque factor
+turbocharged= 0                                 //Is it turbocharged? 0=FALSE, 1=TRUE
+max_design_mp= 30.0                              //Max design manifold pressure, (inHg)
+min_design_mp= 5.0                              //Min design manifold pressure, (inHg)
+critical_altitude= 0.0                          //Altitude to which the turbocharger will provide max design manifold pressure (feet)
+emergency_boost_type= 0                         //0=None, 1=Water Injection, 2=Methanol/Water injection, 3=War Emergency Power
+emergency_boost_mp_offset= 0.0                  //Additional manifold pressure supplied by emergency boost
+emergency_boost_gain_offset= 0.0                //Multiplier on manifold pressure due to emergency boost
+fuel_air_auto_mixture= 0                        //Automixture available? 0=FALSE, 1=TRUE
+auto_ignition= 0                                //Auto-Ignition available? 0=FALSE, 1=TRUE
+max_rpm_mechanical_efficiency_scalar= 1.1    //1.0 //Scalar on maximum RPM mechanical efficiency
+idle_rpm_mechanical_efficiency_scalar= 1.0   //1.1 //Scalar on idle RPM mechanical efficiency
+max_rpm_friction_scalar= 1.0                    //Scalar on maximum RPM friction
+idle_rpm_friction_scalar= 1.2                //1.0 //Scalar on idle RPM friction
+
+[propeller]
+thrust_scalar = 1.0                   //Propeller thrust scalar
+propeller_type= 0                               //0=Constant Speed, 1=Fixed Pitch
+propeller_diameter= 6.1                       //Propeller Diameter, (feet)
+propeller_blades= 3                             //Number of propeller blades
+propeller_moi= 4.9                   //3           //Propeller moment of inertia
+beta_max= 41       //45                  //31      //Maximum blade pitch angle for constant speed prop, (degrees)
+beta_min= 15.2                       //14  //Minimum blade pitch angle for constant speed prop, (degrees)
+min_gov_rpm=500.0                          //1100   //Miminum governed RPM
+prop_tc= 0.1                         //0.1           //Prop time-constant
+gear_reduction_ratio= 1.0                       //Propeller gear reduction ratio
+fixed_pitch_beta= 0.0                           //Fixed pitch angle of fixed pitch prop, (degrees)
+low_speed_theory_limit= 80                 //Speed at which low speed theory becomes blended in (feet/second)
+prop_sync_available= 1                          //Prop synchronization available? 0=FALSE, 1=TRUE
+prop_deice_available= 1                         //Prop de-icing available? 0=FALSE, 1=TRUE
+prop_feathering_available= 1                    //Prop feathering available?  0=FALSE, 1=TRUE
+prop_auto_feathering_available=0              //Prop auto-feathering available?  0=FALSE, 1=TRUE
+min_rpm_for_feather= 1200.0           //700   //Minimum RPM for prop feathering
+beta_feather= 82.5                    //82.5  //Feathering pitch angle (degrees)
+power_absorbed_cf= 0.9                          //Coefficient of friction for power absorbed by propeller
+defeathering_accumulators_available= 0          //Defeathering accumulators available? 0=FALSE, 1=TRUE 
+prop_reverse_available= 0                       //Prop reverse available?  0=FALSE, 1=TRUE
+minimum_on_ground_beta= 0.0                     //Miminum pitch angle on ground, (degrees)
+minimum_reverse_beta= 0.0                       //Minimum pitch angle in reverse, (degrees)
+
+[contact_points]
+//0  Class
+        //1  Longitudinal Position        (feet)
+        //2  Lateral Position             (feet)
+        //3  Vertical Position            (feet)
+        //4  Impact Damage Threshold      (Feet Per Minute)
+        //5  Brake Map                   (0=None, 1=Left, 2=Right)
+        //6  Wheel Radius                (feet)
+        //7  Steer Angle                         (degrees)
+        //8  Static Compression           (feet)  (0 if rigid)
+        //9  Max/Static Compression Ratio
+        //10 Damping Ratio               (0=Undamped, 1=Critically Damped)
+        //11 Extension Time              (seconds)
+        //12 Retraction Time             (seconds)
+        //13 Sound Type
+        //14 Airspeed limit for retraction (KIAS)
+        //15 Airspeed that gear gets damage at (KIAS)
+
+
+//GEAR
+point.0 = 1,  1.86,  0.00, -3.30, 1600, 0, 0.633, 40, 0.17, 2.5, 0.90, 4.0, 4.0, 0, 152, 180
+point.1 = 1, -5.73, -5.14, -3.40, 3500, 1, 0.886,  0, 0.50, 2.5, 0.85, 4.0, 4.0, 2, 152, 200
+point.2 = 1, -5.73,  5.14, -3.40, 3500, 2, 0.886,  0, 0.50, 2.5, 0.85, 4.0, 4.0, 3, 152, 200
+
+static_pitch = 0.5           //Degrees
+static_cg_height = 2.95        //Feet
+gear_system_type=0
+
+[gear_warning_system]
+gear_warning_available = 1    //Normal
+pct_throttle_limit =  0.1     //Percent throttle that activates warning
+flap_limit_idle    =  0.0     //Flap angle that activates warning at idle
+flap_limit_power   = 31.5     //Flap angle that activates warning at above idle
+
+[brakes]
+parking_brake = 1       //Parking brake available
+toe_brakes_scale = 1.0  //Brake scalar
+auto_brakes = 0
+
+[hydraulic_system]
+normal_pressure = 0.0    //PSI
+
+[flaps.0]
+type             = 1                                    // 1 - trail, 2 - lead
+span-outboard    = 0.40                                 // 0.0 .. 1.0
+extending-time   = 1.0                                   // seconds
+flaps-position.0 = 0                                    // degrees
+flaps-position.1 = 10                                   // degrees
+flaps-position.2 = 25                                   // degrees
+flaps-position.3 = 40           
+damaging-speed   = 110                                  // KIAS
+blowout-speed    = 180                                  // KIAS
+
+[electrical]
+max_battery_voltage = 24.0		//changed back from 14.0
+generator_alternator_voltage = 28.0
+max_generator_alternator_amps = 30.0	//changed back from 70.0
+engine_generator_map = 1,1		//added back
+
+;BusType, MaxAmpLoad, MinVoltage       ;BusTypes:0=MainBus,1=AvionicsBus,2=BatteryBus,3=HotBatteryBus,4-7=Generator/AlternatorBus(1-4)
+
+gear_motor         = 0, 5 , 17.0
+autopilot          = 0, 5 , 17.0
+avionics_bus       = 0, 5 , 17.0	//changed back from 0, 25, 17.0
+avionics           = 1, 5 , 17.0
+pitot_heat         = 0, 2 , 17.0
+additional_system  = 0, 2 , 17.0
+marker_beacon      = 1, 2 , 17.0
+gear_warning       = 0, 2 , 17.0
+fuel_pump          = 0, 5 , 17.0
+starter1           = 0, 20, 17.0	//added back
+light_nav          = 0, 5 , 17.0
+light_beacon       = 0, 5 , 17.0
+light_landing      = 0, 5 , 17.0
+light_taxi         = 0, 5 , 17.0
+light_strobe       = 0, 5 , 17.0
+light_panel        = 0, 5 , 17.0
+
+[pitot_static]
+vertical_speed_time_constant = 0.7              //Increasing this value will cause a more instantaneous reaction in the VSI
+pitot_heat=1.000000                             //Scalar on heat effectiveness, 0 = not available
+
+[Radios]
+// Radio Type = availiable, standby frequency, has glide slope
+Audio.1       = 1
+Com.1         = 1, 1
+Com.2         = 1, 1
+Nav.1         = 1, 1, 1
+Nav.2         = 1, 1, 0
+Adf.1         = 1
+Transponder.1 = 1
+Marker.1      = 1
+Dme.1         = 1
+
+[Views]
+eyepoint= -4.408, -0.815, 2.189  //(feet) longitudinal, lateral, vertical distance from reference datum
+
+[LIGHTS]
+//Types: 1=beacon, 2=strobe, 3=navigation, 4=cockpit, 5=landing
+light.0 = 3,  -0.75, -19.40,  -.05, fx_navred ,      //1.45  //-3.50, -19.40,  -.10, fx_navred
+light.1 = 3,  -4.50,  19.40,  -.10, fx_navgre ,      //1.45 //-7.50,  19.40,  -.20, fx_navgre
+light.2 = 3, -22.10,   0.01,  -0.77, fx_navwhi ,
+light.3 = 2,  -0.75, -19.50,  -.05, fx_strobe ,
+light.4 = 2,  -4.30,  19.50,  -.10, fx_strobe ,
+light.5 = 1, -25.75,   0.00,  5.00, fx_beacon ,
+light.7 = 4,  -7.30,   0.00,  2.60, WS_vclight-s ,
+light.8 = 4,  -8.30,   0.50,  2.80, WS_vclight-s2 ,
+//light.9 = 5,  -6.70,  -17.4,  1.25,  fx_landing ,
+//light.10 = 5,  -6.70,   17.4,  1.25,  fx_landing ,
+
+[keyboard_response]
+//Breakpoint speeds (knots) on the keyboard increments of control surfaces.
+//Speed at which the incremenet is reduced to  1/2 and 1/8 respectively.
+elevator = 150, 250
+aileron  = 150, 250
+rudder   = 150, 250
+
+[altimeters]
+altimeter.0=1
+altimeter.1=1
+
+[airspeed_indicators]
+airspeed_indicator.0=1
+airspeed_indicator.1=1
+
+[direction_indicators]
+//1 Type: 0=None, 1=Vacuum Gyro, 2=Electric Gyro, 3=Electro-Mag Slaved Compass, 4=Slaved to another
+//2 Indicator number of slaving indicator if Type = 4
+direction_indicator.0=3,0
+
+[attitude_indicators]
+//Type: 0=None, 1=Vacuum Gyro, 2=Electric Gyro
+attitude_indicator.0 = 1 
+attitude_indicator.1 = 2
+
+[turn_indicators]
+//Type: 0=None, 1=Electric Gyro, 2= Vacuum Gyro
+turn_indicator.0=1,1        //Turn and Bank
+
+[vacuum_system]
+max_pressure=5.15
+vacuum_type=1
+electric_backup_pressure=4.90
+engine_map=1,1
+
+[pneumatic_system]
+max_pressure=0.000000
+bleed_air_scalar=0.000000
+
+[fuel]
+LeftMain  = -5.2, 6.500, 0.850, 54.0, 2.0     //Longitudinal (feet), Lateral (feet), Vertical (feet), Usable(gallons), Unusable (gallons)
+RightMain = -5.2, -6.500, 0.850, 54.0, 2.0     //Longitudinal (feet), Lateral (feet), Vertical (feet), Usable(gallons), Unusable (gallons)
+fuel_type = 1                                //Fuel type: 1 = Avgas, 2 = JetA
+number_of_tank_selectors = 2                    
+electric_pump=1
+
+[EFFECTS]
+wake=fx_wake
+water=fx_spray
+dirt=fx_tchdrt
+concrete=fx_sparks
+touchdown=fx_tchdwn_s, 1
+
+[exits]
+number_of_exits = 2
+exit_rate.0 = 0.4                               ;Percent per second
+
+[airplane_geometry]
+wing_area               = 183.8                //Square feet
+wing_span               = 38.6              //Feet
+wing_root_chord         = 5.3                   //Feet
+wing_dihedral           = 6.9                   //Degrees
+wing_incidence          = 2.5            //Degrees (2.5)
+wing_twist              = -1.5                  //Degrees
+oswald_efficiency_factor= 0.6                   //Measure of lift effeciency of wing
+wing_winglets_flag      = 0                     //Are winglets available?
+wing_sweep              = 0.0                   //Degrees, wing leading edge
+wing_pos_apex_lon       = -5.6                  //Feet, longitudinal distance from reference point, negative going aft
+wing_pos_apex_vert      = 0.0                   //Feet, vertical distance from reference point, positive going up
+htail_area              = 60.0                  //Square feet
+htail_span              = 15.9                  //Feet
+htail_pos_lon           = -20.1                 //Feet, longitudinal distance from reference point, negative going aft
+htail_pos_vert          = 0.0                   //Feet, vertical distance from reference point, positive going up
+htail_incidence         = 2.0                   //Degrees
+htail_sweep             = 0.0                   //Degrees, horizontal tail leading edge
+vtail_area              = 88.0                  //Square feet
+vtail_span              = 10.7                  //Feet, tip to body
+vtail_sweep             = 0.0                   //Degrees, vertical tail leading edge
+vtail_pos_lon           = -22.9                 //Feet, longitudinal distance from reference point, negative going aft
+vtail_pos_vert          = 3.1                   //Feet, vertical distance from reference point, positive going up
+elevator_area           = 20.0                  //Square feet
+aileron_area            = 11.3                  //Square feet
+rudder_area             = 10.5                  //Square feet
+elevator_up_limit       = 17.0                  //Degrees
+elevator_down_limit     = 15.5                  //Degrees
+aileron_up_limit        = 18.0                  //Degrees
+aileron_down_limit      = 18.0                  //Degrees
+rudder_limit            = 20.0                  //Degrees
+elevator_trim_limit     = 15.0                  //Degrees
+spoiler_limit           = 0.0                   //Degrees
+spoilerons_available    = 0                     //Spoilerons Available?
+aileron_to_spoileron_gain = 0                   //Aileron to spoileron gain
+min_ailerons_for_spoilerons = 0                 //Degrees
+min_flaps_for_spoilerons = 0                    //Minimum flap handle position when spoilerons activate
+auto_spoiler_available=0
+positive_g_limit_flaps_up=3.000000
+positive_g_limit_flaps_down=2.000000
+negative_g_limit_flaps_up=-2.000000
+negative_g_limit_flaps_down=-2.000000
+
+
+[Reference Speeds]
+flaps_up_stall_speed    = 58.0                  //Knots True (KTAS)
+full_flaps_stall_speed  =55.0                  //Knots True (KTAS)
+cruise_speed            = 160.0                 //Knots True (KTAS)
+max_indicated_speed=202.0
+
+[autopilot]
+autopilot_available= 1
+flight_director_available= 1
+default_vertical_speed= 700.0
+autothrottle_available= 0
+pitch_takeoff_ga=8.000000
+use_no_default_bank=1
+default_bank_mode=0
+max_pitch=10.000000
+max_pitch_acceleration=1.000000
+max_pitch_velocity_lo_alt=2.000000
+max_pitch_velocity_hi_alt=1.500000
+max_pitch_velocity_lo_alt_breakpoint=20000.000000
+max_pitch_velocity_hi_alt_breakpoint=28000.000000
+max_bank=25.000000
+max_bank_acceleration=1.800000
+max_bank_velocity=3.000000
+max_throttle_rate=0.100000
+nav_proportional_control=9.000000
+nav_integrator_control=0.250000
+nav_derivative_control=0.000000
+nav_integrator_boundary=2.500000
+nav_derivative_boundary=0.000000
+gs_proportional_control=9.520000
+gs_integrator_control=0.260000
+gs_derivative_control=0.000000
+gs_integrator_boundary=0.700000
+gs_derivative_boundary=0.000000
+yaw_damper_gain=0.000000
+
+[forcefeedback]
+stick_shaker_magnitude=5000             ; 0 - 10000
+stick_shaker_direction=0                ; 0 - 35999 degrees
+stick_shaker_period=111111              ; in microseconds
+gear_bump_nose_magnitude=3000           ; 0 - 10000
+gear_bump_nose_direction=18000          ; 0 - 35999 degrees
+gear_bump_nose_duration=250000          ; in microseconds
+gear_bump_left_magnitude=2700           ; 0 - 10000
+gear_bump_left_direction=9000           ; 0 - 35999 degrees
+gear_bump_left_duration=250000          ; in microseconds
+gear_bump_right_magnitude=2700          ; 0 - 10000
+gear_bump_right_direction=27000         ; 0 - 35999 degrees
+gear_bump_right_duration=250000         ; in microseconds
+ground_bumps_magnitude1=1300            ; 0 - 10000
+ground_bumps_angle1=08900               ; 0 - 35999 degrees
+ground_bumps_intercept1=3.0
+ground_bumps_slope1=0.20
+ground_bumps_magnitude2=200             ; 0 - 10000
+ground_bumps_angle2=09100               ; 0 - 35999 degrees
+ground_bumps_intercept2=1.075
+ground_bumps_slope2=0.035
+crash_magnitude1=10000                  ; 0 - 10000
+crash_direction1=01000                  ; 0 - 35999 degrees
+crash_magnitude2=10000                  ; 0 - 10000
+crash_direction2=9000                   ; 0 - 35999 degrees
+crash_period2=75000                     ; in microseconds
+crash_duration2=2500000                 ; in microseconds
+
+[stall_warning]
+type=1
+stick_shaker=0
+[attitude_indicators]
+
+[deice_system]
+structural_deice_type=0     //was 3:  0 = None, 1 = Heated Leading Edge, 2 = Bleed Air Boots, 3 = Eng Pump Boots
+
+

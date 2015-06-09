@@ -1,0 +1,142 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="William Roth">
+   <meta name="GENERATOR" content="Mozilla/4.75 [en] (Windows NT 5.0; U) [Netscape]">
+   <title>AirEd Help</title>
+</head>
+<body>
+
+<center>
+<h1>
+<font color="#FF0000">AirEd Help</font></h1></center>
+
+<h4>
+<b><font color="#000000"><i>New to version 1.52</i>:(9-12-2000)</font></b></h4>
+
+<ul>
+<li>
+<font color="#000000">Fixed the dbldb tbl16 display problem. Windows 98,
+95 etc. are still DOS based, with much 16 bit code. If the entries had
+values greater than 32767, the displays got confused. I didn't see this
+for a long time because I use NT, which is a real 32 bit OS.</font></li>
+
+<li>
+<font color="#000000">Added the ability to text edit both X and Y values
+in the tbldb graph window.</font></li>
+
+<li>
+<font color="#000000">Tbl3d can now edit all fields, including the descriptors
+(displayed in grey). I have no idea what changing these will do to FS,
+so use at your own risk!</font></li>
+</ul>
+<font color="#000000">AirEd will edit every data member of an FS98 AIR
+file. The AIR file specifies flight dynamics for an aircraft. It has <i>No
+Effect </i>on the visual model whatsoever.</font>
+<p><font color="#000000">Files:</font>
+<br><font color="#000000">Menu choices are for the standard file operations,
+Open, Save, and Save As. They work as expected. Note that AirEd can be
+made the editor of choice by selecting "Set AirEd for AIR files". Then
+AirEd will come up automatically when you click on an AIR file in File
+Manager or Explorer or IE or whatever it is this week.</font>
+<p><font color="#000000">The List:</font>
+<br><font color="#000000">Once a file is open, there will be a list of
+records presented. This list is similar to the one for directories in File
+Manager. There will be icons that show kind of data the record contains,
+and a brief text description. Some records contain only one item of data.
+If so, the type of data is shown in the icon. You can get a <a href="DataTypes.html">Description
+Of Data Types</a>.</font>
+<br><font color="#000000">If the record contains more than one item of
+data, the icon will be&nbsp;</font><img SRC="rec.jpg" NOSAVE height=18 width=32 align=ABSCENTER>
+<br><font color="#000000">This means that when you click on it, it will
+expand to show all of the data items in that record.</font>
+<p><font color="#000000"><b><i>NOTE</i></b>: Single clicks are used in
+AirEd. Double clicking is not needed or recognized!</font>
+<p><font color="#000000">Editing Items:</font>
+<br><font color="#000000">To edit an item, simply single click the left
+mouse button over it.</font>
+<br><font color="#000000">The way you edit an item depends on what type
+of data it contains.</font>
+<ul>
+<li>
+<font color="#000000">Numbers: An edit box appears directly to the right
+of the item. When done editing, press Enter (on the keyboard) to save the
+data, or Escape to cancel.</font></li>
+
+<li>
+<font color="#000000">BOOL data type: This is a True/False type, so clicking
+will simply toggle it.</font></li>
+
+<li>
+<font color="#000000">Text: A dialog appears with a text box that you can
+use to edit the text. Press OK to save the changes, or Cancel to close
+without saving.</font></li>
+
+<li>
+<font color="#000000">Unknown: If the contents of a record are unknown,
+clicking on it will bring up a Hex Edit dialog. I won't go into lessons
+on Hex editing here. Only to be used if you know what you are doing!</font></li>
+
+<li>
+<font color="#000000">Tables: As I better understand the structure of the
+tables, I'll make graphs to be able to edit them. See <a href="DataTypes.html">Description
+Of Data Types</a> for how to edit them.</font></li>
+</ul>
+<font color="#000000">Right clicking on an item will bring up a small menu
+with some advanced functions to choose from.</font>
+<ul>
+<li>
+<font color="#000000"><b>Info</b>: Shows file offset to the data, data
+length and help text.</font></li>
+
+<li>
+<font color="#000000"><b>Edit As Hex:</b> Brings up the Hex Edit dialog
+regardless of the actual data type.</font></li>
+
+<li>
+<font color="#000000"><b>Separator</b>: Everything below here works on
+whole records only.</font></li>
+
+<li>
+<font color="#000000"><b>Copy To Clipboard</b>: Copies the currently selected
+record to the clipboard so it can be placed into another file.</font></li>
+
+<li>
+<font color="#000000"><b>Add From Clipboard</b>: Adds the record in the
+clipboard to the current file.</font></li>
+
+<li>
+<font color="#000000"><b>Remove Record:</b> Does what it says, says what
+it does.</font></li>
+
+<li>
+<font color="#000000"><b>Replace from clipboard</b>: Overwrites the selected
+record with the record from the clipboard. The two records must be the
+same number and length.</font></li>
+</ul>
+
+<p><br><font color="#000000">At the bottom of the window is a bar with
+text. If you are editing a number, that text will show you the ranges of
+numbers you can enter.</font>
+<br><font color="#000000">More advanced users can edit the ini file, which
+is where just about everything you see is specified. Explanations of the
+entries are in the file.</font>
+<br><font color="#000000"><b><i>NOTE</i></b>: Don't edit AirEd.ini unless
+you know what you are doing! The program won't function right if the file
+gets botched.</font>
+<p><font color="#000000">If you have found out the function of an entry,
+please e-mail me with the information, including the steps you took to
+verify it and I will include it in the next update. All entries MUST be
+verified in the sim. It isn't enough to just find out what got changed
+by some other editor!</font>
+<p>My web page is gone for a while. My old ISP moved the files, breaking
+the links I included with these files for over 10,000 users. I summarily
+dumped them when they wouldn't restore the files. I have a new ISP, and
+I will get around to putting up a web page soon.
+<p><font color="#000000">Please DON'T e-mail me asking where some thing
+or another is. If it's been found, it's in there.</font>
+<p>&nbsp;<a href="mailto:eagle@dsl-only.net">E-Mail Bill</a>
+<br>&nbsp;
+</body>
+</html>

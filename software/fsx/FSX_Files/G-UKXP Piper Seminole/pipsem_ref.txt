@@ -1,0 +1,125 @@
+PIPER SEMINOLE REFERENCE INFORMATION
+
+Engine
+Manufacturer: Lycoming
+Model: 0-360-A1H6/LO-360-A1H6
+Horsepower: 180 hp
+
+Weights
+Gross Weight: 3800 lbs
+Standard Equipped Weight: 2615 lbs
+
+Dimensions
+Wing Span: 38.6 feet/11.8 meters
+Length: 27.6 feet/8.4 meters
+Height: 8.5 feet/2.6 meters
+Wing Area: 183.8 square feet/17.08 square meters
+
+Fuel Capacity
+Usable Fuel: 108 gallons/409 litres 
+
+Maximum Speed
+TAS at Gross Weight: 168 kts/311 kmh
+
+Total Flight Simulator aircraft weight with full fuel
+          3,800 lbs
+
+NOTE: To adjust fuel load, on the Aircraft menu, select Fuel.
+
+VA - Maneuvering Speed
+          135 KIAS 3800 lbs
+          112 KIAS 2700 lbs
+
+VFE - Maximum Flaps Extended Speed
+          135 KIAS (Approach--flaps 15 degrees)
+          122 KIAS (Full down--flaps 30 degrees)
+
+VLE - Maximum Landing Gear Extension Speed
+           152 KIAS
+
+VLO-retr - Maximum Gear Retraction Speed
+	109 KIAS
+VLO-ext Max Gear Extension Speed 
+	140 KIAS
+
+Landing Approach Speed (3,800 lbs)
+            80 KIAS (full down--flaps 30 degrees)
+
+VNO - Maximum Structural Cruising Speed
+           169 KIAS
+
+Turbulent Air Penetration Speed
+           156 KIAS
+
+VNE - Never Exceed Speed
+           202 KIAS
+
+VS  -  Stalling Speed (maximum weight)
+          55 KIAS
+
+VSO  -  Stalling Speed in the Landing Configuration
+            (maximum weight)
+            55 KIAS
+
+VMC Minimum Controllable Speed
+	56 KIAS
+
+VX  -  Two-Engine Best Angle-of-Climb Speed
+          82 KIAS
+
+VY  -  Two-Engine Best Rate-of-Climb Speed
+          88 KIAS
+
+VXSE  -  One-Engine Inoperative Best Angle-of-Climb Speed
+              82 KIAS
+
+VYSE  -  One-Engine Inoperative Best Rate-of-Climb Speed
+             88 KIAS
+
+Service Ceiling
+	Twin Engine (100 fpm): 15,000 ft.
+	Single Engine (50 fpm): 3,800 ft.
+
+Maximum Glide Range Speed
+             115 KIAS
+
+Cruising Range
+Cruising Range: 610 nm/1130 km
+(45 minute reserves at 75% power) 
+
+Stall Speed
+Flaps Down Full 40 degrees: IAS 55 kts/IAS 102 kmh
+
+
+Take-Off Distance
+Total over 50-foot obstacle: 2200 feet/671 meters
+
+Landing Distance
+Total over 50-foot obstacle: 1490 feet/454 meters
+
+
+Symbol Speed KIAS 
+VNE Never Exceed 			202 
+VSO Stall Speed Flaps 40°  		55
+VNO Max. Structural Cruise		169 
+VMC Minimum Controllable Speed	 56
+VS1 Stall Speed Flaps Up 		 57
+VX Best Angle of Climb		 82
+VXSE Best Angle of Climb Single Engine 82
+VA Design Maneuvering Speed:  	3800 lbs.  135
+				2700 lbs.  112
+VY Best Rate of Climb 		88
+VFE Max. Flap Extended Speed 	111
+VYSE Best Rate of Climb Single Engine 	88 
+VLO Retract Max. Gear Retraction Speed 109 Enroute
+Cruise Climb 			105
+VLO Extend Max. Gear Extension Speed 140 __ Normal
+Approach Flaps 40° 80
+VLE Max. Gear Extended Speed 140
+Short Field Approach Flaps 40° 70-75
+VSSE Intentional One Engine Inoperative Speed 82 
+Instrument Approach Flaps 10° 100 
+
+
+
+

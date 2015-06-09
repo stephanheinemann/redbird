@@ -1,0 +1,181 @@
+Installation is very simple. Just unzip everything to a directory and you're ready to run. The program and its files need to be together to work. There are no interpreter "runtime" DLLs to worry about installing either. Everything needed is included.
+
+Help is available via a set of local web pages that are included in this zip file. They go in the same place as AirEd.exe for help to work.
+
+AirEd Version 1.51 Copyright © 1998, 2000 William M. Roth. All Rights Reserved.
+Free distribution ONLY. This program cannot be posted where a fee of any kind is required or even nagged for. It cannot be included in a fee package. This includes disk distribution or any other fees of any kind.
+AirEd may NOT be used for any for-profit purpose. This means no editing for-sale aircraft.
+When I say free, I mean FREE!!!!
+Any exceptions to the above MUST be approved by the author.
+AirEd was written entirely in C++. No slow klunky Basic here! No interpreter DLLs to try to figure out.
+No warranty of any kind, expressed or implied.
+
+First Release Date: 11/5/98
+This Release Date: 9/9/00
+
+---------------------------------------------
+ADJUSTED SIMPLIFIED VERSION BY YAHIA AL WAJID
+---------------------------------------------
+email: yahia786@elitemail.org
+
+Knowing that [1101] of the .AIR file is of great importance, having noticed many ???, I have tried to simplify and explain things in the various records. Hopefully the adjusted 'aired'.ini file (R. Freimuth) works well for you, if not use the copy of the Freimuth original instead..., without my amendments.
+
+IMPORTANT is to have the Center of Gravity (CG) !-preset-! in the aircraft CFG file 'wing_pos_apex_lon' entry, which you must verify in the FS9 "fuel and cargo" load menu options (from create flight) at the small aircraft shown there! Before you start using AirEd do that. The CG MUST be at or between the 2nd and 3rd red dash behind the leading wing edge of the "silly" wing that is shown... If not, your plane will either dive down or pitch up on take-off...!
+So, when adjusting an existing, ill-behaving aircraft go there first. When in doubt about + or - signs in the CFG file, just fill in a larger value, f.e. -20 to see its effect on the "fuel and cargo load" airplane-graphic in FS9. Nextly go from there to find the correct values.
+
+In AirEd click the right mouse button to see the INFO menu option. Here I have written my suggestions and explanations, which sometimes divert from things thought to be found there before...!
+
+Yahia al Wajid
+August 2006
+
+
+Here follows the content of my interpretation of [1101] in the 'aired' ini-file in case the updated ini doesn't work for you:
+
+[1101]
+1=* --- Misc. ---- [5/10/05 Aired.ini by R. Freimuth / upd. 8-06 click right btn for hints]
+1h=* --Adjusted interpretation by Yahia al Wajid 8-2006 --- see Menu>Info for hints
+2=00,int16,*Airframe Type
+2h=48=Cess|49=Gldr|50=Lear|51=Sop|52=Extra|53=737|66=F-15|566=B24|822=B25|1078=109e|1334=109g|1590=110|1846=C47|2102=Do17|2358=Fw190|2614=He111|2870=Hurr|3126=Ju87|3382=Ju88|3638=Msquto|3894=P47|4150=P51|4406=P38|4662=Spit1|4918=Spit9|5174=Tmpst|5943=Concorde|more
+;|5430=V1|more
+3=02,int16,Stall Warning - Stick Shaker (kts)
+4=04,aspd,*Vmo - Overspeed Warning (kts)
+4h=Effect: activates overspeed warning - also in CFG file!
+5=08,int16,*Gauge Airspeed Indicator Base (kts)
+5h=Adds to the airspeed indication, often -10 |For gauges which indicate IAS low at|high AoA due to Pitot Tube effects
+6=0A,int16,*Airspeed Weight Factor * 32768
+6h=+32500 is good for jets, default is -32768; Airspeed Base=0|[-30150 gives exact IAS at 120 kts]; Airspeed Base=-10
+
+7=0C,double,Flaps Cycle Time (sec)
+8=14,double,Spoiler Cycle Time (sec)
+9=1C,int32,*Empty Weight (lb)
+9h=Weight of aircraft without fuel|and payload if that load is in .CFG file!
+10=20,ang16,*Stall Warning - Body AoA@Clm (deg)
+10h=Set to 16º if small acft, but miljets do have 40º and more!
+;;11=22,ang16,*AoA Related??
+;11=22,int16,*x2
+;;11h=MilJet often 40º+ to prevent stall in turns!
+;;12=24,int16,*x3
+;;12h=P47D=14 - Small ang18 AoA
+11=22,int32,*!Downwash-airflow related
+11h=Spare
+12= Spare
+
+13=26,int16,*Braking Strength - Max (ft/sec^2 * 2048?)
+13h=Defaults to -32768, max effort Flag|Otherwise 0 to 32767, More realistic values are 10,000-30,000|Max rate occurs only after full weight on tires|Braking low in FS9 take care.
+; 32767 is about 16 ft/sec^2:-0.5 G|May relate to Tire Coeff of Friction
+
+14=* -------- G Limits --------
+14h=Set to about 1.5X Rated Load Limits|(2808=3.00)
+15=28,int16,Positive G Limit * 936
+16=2A,int16,Negative G Limit * 936
+17=2C,int16,Positive G Limit /w Flaps * 936
+18=2E,int16,Negative G limit /w Flaps * 936
+
+19=* -------- Drag (*2048) - Per Radian ----------
+19h=Divide by 2048 for actual values|No compressability inc.
+20=30,int16,*Cdo Fuselage Drag Coeff.at Zero Lifts (Vcrs)
+20h=Cdo=+50 avg, set Vcrs and 1.4x calc.Wing Area in CFGfile!
+21=32,int16,*Cd_df Drag Coefficient - Flaps
+21h=Per Radian|effect: brake spd+nose down acft (see Cm-f)
+22=34,int16,*Cdg Drag Coefficient - Landing Gear
+22h=Gear down. Effect: pitch adjust + or - at low speed!
+23=36,int16,*Cd_ds Drag Coefficient - Spoiler
+23h=Effect: brake+nose down acft (see Cm-s)
+
+24=38,18,* ----- Zeros (x4-x15) -----
+24h=Not currently used:Check Hex view
+
+25=50,ang16,*Fuselage AoA at Min Induced Drag
+25h=| Effect: acft hor.attitude at Vcrs|avg:+0.2 to -0.2º
+
+26=Spare
+27=Spare
+
+28= * --- Stability & Control Derivatives (*2048) - Per Radian -----
+28h=Roll, Pitch, Yaw subscripts: Angles l,m,n; Rates p,q,r|_da,_de,_dr: 'due to' ailerons, elevator, rudder, etc.|Lift & Drag norm to qS; Pitch to qSc, Roll & Yaw to qSb
+
+29= --------- Lift ----------
+30=52,int32,*CL_adot Lift - AoA rate?
+30h=Mooney=26000, MilJet=42000, 777=65000 avg
+31=56,int32,*CL_q  Lift - Pitch bounce
+31h=Effect: 'bounce' from pitching|Mooney=-10134, Lear=-55912, use MOI-pitch in CFG!|if unstabil at runway!
+
+32=5A,int16,*CL_de  Lift - Elevator raising tail up/down
+32h=Effect: acft pulled up or pushed down by its tail, not at CG!|Important for take-off!
+33=5C,int16,*CL_dh  Lift - Horizontal Stabilizer
+33h=Negative, little effect when 32 is set properly|see: CFG Hstab incidence avg -0.1/+0.1
+34=5E,double,*CL_df  Lift - Flaps - +tail up
+34h=Per radian|+ pulling the trailing edge of wing up!|see:Cm-f to compensate pitch
+35=66,double,*CL_ds  Lift - Spoilers - +tail up/-down
+35h=Per radian|when deployed + pulling tail up|see:Cm-df to compensate pitch
+
+36= --------- Roll --- +=Right Aileron Down -------
+37=6E,int16,*Cl_beta Roll Moment - Dihedral on drift2right use -
+37h=Neg.- roll left|compensation for r.roll drift| avg -360/-500
+38=70,int16,*Cl_da Roll Moment - Ailerons (Eff. Control) -
+38h=Aileron Control Factor|Effect: rollspeed, try -1200| see CFG ail.values,eff.keyboard,MOIroll!
+39=72,int32,*!Cl_dr Roll Moment - Rudder roll +
+39h=Effect: roll induced by rudder| Typ 0.015
+40=76,int32,*Cl_p  Roll Moment - Roll Rate (Damping) -
+40h=Typ 70000 for swept wings| Avg 9x Cl_da!
+41=7A,int32,*Cl_r  Roll Moment - Yaw Rate +
+41h=Effect: damping curves - rolldamper| +10000 average value to see it
+42=7E,double,*!Cl_ds - Roll Moment - Spoilerons +
+42h=Increases Roll Moment as Spoilerons are deflected| No 2048 factor
+
+43= --------- Pitch --- +=Nose Down -------
+44=86,int32,*Cmo  Pitch Moment Coeff at AoA=0 (Trim os)
+44h=Affects Pitch Stability|See Cl_de|pitch up correction with tiny neg -value (f.e.-2)
+45=8A,int32,*Cm_adot Pitch Moment - AoA Rate +
+45h=TAS is factor for CM_adot Damping| Tendency to return to previous pitch
+46=8E,int32,*Cm_de Pitch Moment - Elevator (Eff. Control) -
+46h=Elevator Control Factor|Effect: elevator agression, -7000 avg
+47=92,int32,*Cm_dh Pitch Moment - Horizontal Stabilizer +
+47h=Trim varies with this. See Sec 1205| Try: +112
+48=96,int32,*Cm_q  Pitch Moment - Pitch Rate (Damping) -
+48h=Effect: damping Cm_de, set 4-5x Cm-de for avg -value
+49=9A,double,*Cm_dT Pitch Damping - Thrust
+49h=Effect: small for props, neg = pitch up
+50=A2,double,*!Cm_q(T) Pitch by Thrust
+50h=Neg.value is pitch up at full thrust|see: vpos.engn in CFG file!|Lever function.
+
+51=AA,double,*Cm_dt Pitch Moment - Trim -
+51h=Each 'click' of KB pitch trim is 1/1024 Range|Affects Autopilot Altitude Hold.|See SEC 1199 #14|Try: -2
+52=B2,double,*Cm_df  Pitch Moment - Flaps/-neg=pitch-up
+52h=Effect: very important to have acft pitch up on flaps|see: flap setting in CFG!
+53=BA,double,*Cmg  Pitch Moment - Gear -
+53h=Gear down pitch|Ideal to compensate pitch at very low speeds, -neg. value
+54=C2,double,*Cm_ds  Pitch Moment - Spoilers
+54h=Effect: neg.-value compensates nose down on spoiler|see:spoiler angle in CFG: set <45ª!
+
+55= --------- Yaw --- +=Nose Left -------
+56=CA,int32,*Cn_beta Yaw Moment - Sidewind (Weathervane effect) -
+56h=Sidewind effect, mostly on runway|improves taxiing -20000 avg
+57=CE,int16,*!Cn_da Yaw Moment - Aileron - nose +in/-out curve direction
+57h=Effect:oversteer effect, ail pushing nose away from turn, slip effect -200avg
+58=D0,int32,*Cn_dr Yaw Moment - Rudder (Control)
+58h=Rudder Control Factor|Should give about 15 deg Sideslip
+59=D4,double,*Cn_dT Yaw Moment - Thrust
+59h=Yaw due to asymm.prop/jet thrust|Higher values increase rudder control from prop wash
+60=DC,double,*!Cn_r(T) Yaw Damping - Thrust  -
+60h=Yaw Damping due to asymm. prop/jet thrust|neg increases damping|nice to adjust Vmax!
+61=E4,int32,*!Cn_p? Roll Behaviour and Flight Acceleration
+61h=Effect: acceleration and leaning over when taxiing, -100avg|see:contact points in CFG on gear damping!
+62=E8,int16,*Cn_r  Yaw Moment - Yaw Rate (Damps - tailwagging)
+62h=Effect: tail wagging left-right, -22000 avg|see: MOI-rudder in CFG!
+
+63=EA,int32,*!Cn_? Yaw Moment - ??
+63h=Was CY_da, In FS2K affected drag in sideslip|Large, unrealistic values (~13000 C182) added drag in slip.
+
+64= --------- Side Forces slip/taxi--------------
+;64=EA,int32,*CY_da Side Force - Aileron tuning
+65=EE,int16,*CY_beta Side Force - Drag on Slip Angle taxi -
+65h=Important!|Improves taxiing -20000, drag in turns
+66=F0,int16,*CY_dr Side Force - Rudder direction -
+66h=Tracks rudder direction|damping -900 avg to get good flow
+67=F2,int32,CY_p  Side Force - true SideSlip in turns +
+67h=Sideslipping, breaking out in turns|widening turns +200 avg
+68=F6,int32,CY_r  Side Force - Leaning over in turns while taxiing 
+68h=leaning over in turns|avg +1100 is fine for medium acft
+
+//------------
