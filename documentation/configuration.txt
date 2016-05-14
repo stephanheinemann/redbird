@@ -1,0 +1,39 @@
+C:/Redbird/USB_Device.txt
+- identifies a panel and associates an aircraft identifier with the panel
+- the aircraft identifier references the aircraft file and directory
+- there is also a backup directory under C:/Redbird/Restore/
+- it is unclear when and how often backups are taken
+
+E:/*.FLT, *.WX, *.FSSAVE
+- the USB drive stores flight, weather and state data for each aircraft mission
+- the *.FLT files contain the aircraft identifier under the [Sim.0] section
+- assume the FLT files are filtered for the aircraft
+
+Lockheed Martin/Prepare3D/SimObjects/Airplanes/
+- contains the aircraft files
+- the aircraft identifier is to be used and referenced in several files
+- model, sound and texture directories
+- aircraft.cfg and *.air (flight physics model) files
+
+Lockheed Martin/Prepare3D/gauges
+- contains files and archives (*.cab) with cockpit elements
+
+C:/Users/Redbird/Documents/Prepare3dFiles
+- contains saved files
+
+The visual context menu can be open with right mouse key
+The flight simulator menus can be opened after un-hiding the menu
+in the visual context menu and then using the left mouse key on the top
+of the main window
+
+C:/Users/Redbird/AppData/Roaming/Lockheed Martin/Prepar3D/Controls/Standard.xml
+- stores the control assignments
+
+C:/Program Files (x86)/Lockheed Martin/Prepar3D/SimIG.xml
+- may have to do with the monitor / view setup
+
+C:/Users/Redbird/My Documents/Prepar3dFiles
+- probably stores a temporary flight file (*.FLT) as a result of merging the
+*.FLT file on the USB drive (pilot key), the aircraft configuration (*.cfg)
+and the *.FLT file under
+C:/Redbird/Aircraft
