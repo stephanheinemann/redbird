@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<SimBase.Document
+        Type="AceXML"
+        version="1,0"
+        SimGauge.ArtDirectory="."
+        id="Airspeed">
+    <Descr>AceXML Document</Descr>
+    <Filename>Airspeed Indicator.xml</Filename>
+    <SimGauge.Gauge id="Gauge" ArtDirectory=".">
+        <FloatPosition>0.000,0.000</FloatPosition>
+        <Size>256,256</Size>
+        <Element id="BackgroundCard">
+            <FloatPosition>126.000,125.000</FloatPosition>
+            <SizeScale>0.930</SizeScale>
+            <Image id="Airspeed_TAS.bmp" Name="Airspeed_TAS.bmp">
+                <Transparent>True</Transparent>
+                <Axis>128.000,128.000</Axis>
+            </Image>
+            <Rotation id="Rotation">
+                <Expression id="Expression">
+                    <Script>(A:AIRSPEED TRUE CALIBRATE,degrees) dgrd 2 *</Script>
+                </Expression>
+                <FailureTable id="FailureTable">
+                    <Failure id="Failure">
+                        <Fail_Key>GAUGE_AIRSPEED</Fail_Key>
+                        <Fail_Action>Freeze</Fail_Action>
+                    </Failure>
+                </FailureTable>
+            </Rotation>
+        </Element>
+        <Element id="BackgroundINHG">
+            <FloatPosition>115.000,26.000</FloatPosition>
+            <SizeScale>1.250</SizeScale>
+            <Image id="Airspeed_INHG.bmp" Name="Airspeed_INHG.bmp">
+                <Transparent>True</Transparent>
+                <Axis>236.000,0.000</Axis>
+            </Image>
+            <Shift id="Shift">
+                <Scale>50.000,0.000</Scale>
+                <Expression id="Expression">
+                    <Minimum>-10.000</Minimum>
+                    <Maximum>32.000</Maximum>
+                    <Script>(A:AIRSPEED TRUE CALIBRATE,degrees) dgrd 2 *</Script>
+                </Expression>
+                <FailureTable id="FailureTable">
+                    <Failure id="Failure">
+                        <Fail_Key>GAUGE_AIRSPEED</Fail_Key>
+                        <Fail_Action>Freeze</Fail_Action>
+                    </Failure>
+                </FailureTable>
+            </Shift>
+            <MaskImage id="Airspeed_Indicator_Strip_1_Mask.bmp" Name="Airspeed_Indicator_Strip_1_Mask.bmp">
+            </MaskImage>
+        </Element>
+        <Element id="BackgroundImg">
+            <FloatPosition>0.000,0.000</FloatPosition>
+            <SizeScale>0.500</SizeScale>
+            <Image id="Airspeed_Background.bmp" Name="Airspeed_Background.bmp">
+                <Transparent>True</Transparent>
+            </Image>
+        </Element>
+        <Element id="Needle">
+            <FloatPosition>128.000,128.000</FloatPosition>
+            <SizeScale>1.150</SizeScale>
+            <Image id="airSpeed_Needle.bmp" Name="airSpeed_Needle.bmp">
+                <Transparent>True</Transparent>
+                <Axis>24.500,6.500</Axis>
+            </Image>
+            <Rotation id="Rotation">
+                <Expression id="Expression">
+                    <Minimum>0.000</Minimum>
+                    <Maximum>210.000</Maximum>
+                    <Script>(A:Airspeed indicated, knots)</Script>
+                </Expression>
+                <NonlinearityTable id="NonlinearityTable">
+                    <NonlinearityEntry id="0">
+                        <ExpressionResult>0.000</ExpressionResult>
+                        <FloatPosition>128.000,0.000</FloatPosition>
+                    </NonlinearityEntry>
+                    <NonlinearityEntry id="40">
+                        <ExpressionResult>40.000</ExpressionResult>
+                        <FloatPosition>185.000,20.000</FloatPosition>
+                    </NonlinearityEntry>
+                    <NonlinearityEntry id="60">
+                        <ExpressionResult>60.000</ExpressionResult>
+                        <FloatPosition>256.000,85.000</FloatPosition>
+                    </NonlinearityEntry>
+                    <NonlinearityEntry id="80">
+                        <ExpressionResult>80.000</ExpressionResult>
+                        <FloatPosition>256.000,180.000</FloatPosition>
+                    </NonlinearityEntry>
+                    <NonlinearityEntry id="100">
+                        <ExpressionResult>100.000</ExpressionResult>
+                        <FloatPosition>195.000,256.000</FloatPosition>
+                    </NonlinearityEntry>
+                    <NonlinearityEntry id="120">
+                        <ExpressionResult>120.000</ExpressionResult>
+                        <FloatPosition>105.000,256.000</FloatPosition>
+                    </NonlinearityEntry>
+                    <NonlinearityEntry id="140">
+                        <ExpressionResult>140.000</ExpressionResult>
+                        <FloatPosition>5.000,256.000</FloatPosition>
+                    </NonlinearityEntry>
+                    <NonlinearityEntry id="160">
+                        <ExpressionResult>160.000</ExpressionResult>
+                        <FloatPosition>0.000,160.000</FloatPosition>
+                    </NonlinearityEntry>
+                    <NonlinearityEntry id="180">
+                        <ExpressionResult>180.000</ExpressionResult>
+                        <FloatPosition>0.000,95.000</FloatPosition>
+                    </NonlinearityEntry>
+                    <NonlinearityEntry id="200">
+                        <ExpressionResult>200.000</ExpressionResult>
+                        <FloatPosition>0.000,20.000</FloatPosition>
+                    </NonlinearityEntry>
+                    <NonlinearityEntry id="210">
+                        <ExpressionResult>210.000</ExpressionResult>
+                        <FloatPosition>30.000,0.000</FloatPosition>
+                    </NonlinearityEntry>
+                </NonlinearityTable>
+                <FailureTable id="FailureTable">
+                    <Failure id="Failure">
+                        <Fail_Key>GAUGE_AIRSPEED</Fail_Key>
+                        <Fail_Action>Freeze</Fail_Action>
+                    </Failure>
+                </FailureTable>
+            </Rotation>
+        </Element>
+    </SimGauge.Gauge>
+</SimBase.Document>
