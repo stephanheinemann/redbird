@@ -56,7 +56,7 @@
         <Element id="BackgroundImg">
             <FloatPosition>0.000,0.000</FloatPosition>
             <SizeScale>0.500</SizeScale>
-            <Image id="Airspeed_Background.bmp" Name="Airspeed_Background.bmp">
+            <Image id="Airspeed_Background2.bmp" Name="Airspeed_Background2.bmp">
                 <Transparent>True</Transparent>
             </Image>
         </Element>
