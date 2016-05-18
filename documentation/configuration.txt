@@ -15,7 +15,7 @@ Lockheed Martin/Prepare3D/SimObjects/Airplanes/
 - model, sound and texture directories
 - aircraft.cfg and *.air (flight physics model) files
 
-Lockheed Martin/Prepare3D/gauges
+Lockheed Martin/Prepare3D/(gauges)
 - contains files and archives (*.cab) with cockpit elements
 
 C:/Users/Redbird/Documents/Prepare3dFiles
@@ -26,8 +26,17 @@ The flight simulator menus can be opened after un-hiding the menu
 in the visual context menu and then using the left mouse key on the top
 of the main window
 
+C:/Users/Redbird/AppData/Roaming/Lockheed Martin/Prepar3D
+- stores Prepare3D application data
+- Prepar3D.cfg is similar to FSX.cfg
+- scenery.cfg
+
 C:/Users/Redbird/AppData/Roaming/Lockheed Martin/Prepar3D/Controls/Standard.xml
-- stores the control assignments
+- stores the control assignments for keys, yokes and throttles
+- switch panel seems *not* to be included here
+
+C:/Users/Redbird/AppData/Roaming/Lockheed Martin/Prepar3D/SimObjects
+- stores accumulated times for each aircraft in state.cfg files
 
 C:/Program Files (x86)/Lockheed Martin/Prepar3D/SimIG.xml
 - may have to do with the monitor / view setup
@@ -37,3 +46,25 @@ C:/Users/Redbird/My Documents/Prepar3dFiles
 *.FLT file on the USB drive (pilot key), the aircraft configuration (*.cfg)
 and the *.FLT file under
 C:/Redbird/Aircraft
+
+C:/Redbird
+- contains general drivers and data
+
+C:/Redbird/RBSim
+- contains the main simulation root
+- RBSim.exe.Config configures the general simulator components such as
+motion platform, directories and switch panel driver
+- FSX.cfg configures the general flight simulation items, environment,
+controls and components (trusted components)
+
+C:/Redbird/SwitchPanel4
+- contains the actively used Redbird switch panel and its configuration
+- a test program identifies all events associated with the switch panel
+such as KEY_PARKING_BRAKES and KEY_PARKING_BRAKES_OFF
+
+C:/Program Files (x86)/Redbird/Cygnus
+- seems to be related to accessing FSX internal variables from external
+applications such as the switch panel controller using the FSUIPC library
+- according to the manual, Apple devices such as iPhones and iPads can be
+connected to the simulator to obtain, for example, position information
+(EFB applications)
