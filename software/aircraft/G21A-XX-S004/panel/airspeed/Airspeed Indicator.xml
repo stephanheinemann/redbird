@@ -13,7 +13,7 @@
         <Element id="BackgroundCard">
             <FloatPosition>126.000,125.000</FloatPosition>
             <SizeScale>0.930</SizeScale>
-            <Image id="Airspeed_TAS.bmp" Name="Airspeed_TAS.bmp">
+            <Image id="Airspeed_TAS2.bmp" Name="Airspeed_TAS2.bmp">
                 <Transparent>True</Transparent>
                 <Axis>128.000,128.000</Axis>
             </Image>
@@ -32,7 +32,7 @@
         <Element id="BackgroundINHG">
             <FloatPosition>115.000,26.000</FloatPosition>
             <SizeScale>1.250</SizeScale>
-            <Image id="Airspeed_INHG.bmp" Name="Airspeed_INHG.bmp">
+            <Image id="Airspeed_INHG2.bmp" Name="Airspeed_INHG2.bmp">
                 <Transparent>True</Transparent>
                 <Axis>236.000,0.000</Axis>
             </Image>
@@ -50,7 +50,7 @@
                     </Failure>
                 </FailureTable>
             </Shift>
-            <MaskImage id="Airspeed_Indicator_Strip_1_Mask.bmp" Name="Airspeed_Indicator_Strip_1_Mask.bmp">
+            <MaskImage id="Airspeed_Indicator_Strip_1_Mask2.bmp" Name="Airspeed_Indicator_Strip_1_Mask2.bmp">
             </MaskImage>
         </Element>
         <Element id="BackgroundImg">
@@ -63,7 +63,7 @@
         <Element id="Needle">
             <FloatPosition>128.000,128.000</FloatPosition>
             <SizeScale>1.150</SizeScale>
-            <Image id="airSpeed_Needle.bmp" Name="airSpeed_Needle.bmp">
+            <Image id="Airspeed_Needle2.bmp" Name="Airspeed_Needle2.bmp">
                 <Transparent>True</Transparent>
                 <Axis>24.500,6.500</Axis>
             </Image>
