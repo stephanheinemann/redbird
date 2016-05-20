@@ -68,3 +68,7 @@ applications such as the switch panel controller using the FSUIPC library
 - according to the manual, Apple devices such as iPhones and iPads can be
 connected to the simulator to obtain, for example, position information
 (EFB applications)
+
+C:/Redbird/Acrylic
+- seems to store aircraft-specific switch panel and control assignments
+- there is a library for each aircraft
