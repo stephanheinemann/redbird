@@ -1,4 +1,8 @@
-name: Rick
+name: Redbird Inc.
+email: info@redbirdflight.com
+phone: +1 (520) 301-0718
+
+name: Rick Memon
 email: rmemon@redbirdflight.com
-phone:
+phone: +1 (520) 301-0718
 
